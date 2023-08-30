@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* * {box-sizing: border-box;} */
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 84%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.products:hover .overlay {
+  opacity: 1;
+}
+
+
+.icon{
+  transition: 3s ease;
+}
+.user{
+  display: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 0.1rem 0.5rem;
+
+
+
+}
+
+.overlayfirst:hover + .user{
+  display: block;
+  transition: 3s ease;
+  border-radius: 0.4rem;
+  margin-left: -0.5rem;
+
+
+}
+
+.overlaysecond:hover + .user{
+  display: block;
+  transition: 3s ease;
+  border-radius: 0.4rem;
+}
+
+.overlaythird:hover + .user{
+  display: block;
+  transition: 3s ease;
+  border-radius: 0.4rem;
+  margin-left: -0.5rem;
+}
+
+.overlayfourth:hover + .user{
+  display: block;
+  transition: 3s ease;
+  border-radius: 0.4rem;
+  margin-left: -0.5rem;
+
+}
